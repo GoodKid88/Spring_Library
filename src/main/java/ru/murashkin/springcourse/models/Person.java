@@ -9,13 +9,6 @@ public class Person {
     private String name;
     @Min(value = 0, message = "Age should be greater than 0")
     private int age;
-    @NotEmpty(message = "Email should be empty")
-    @Email(message = "Email should be valid")
-    private String email;
-
-    @Pattern(regexp = "[A-Z]\\w+, [A-Z]\\w+, \\d{6}",
-            message = "Your address should be in this format: Country, City, Postal Code(6 digits)")
-    private String address;
 
     public Person() {
     }
@@ -24,8 +17,6 @@ public class Person {
         this.id = id;
         this.name = name;
         this.age = age;
-        this.email = email;
-        this.address = address;
     }
 
     public int getId() {
@@ -52,19 +43,4 @@ public class Person {
         this.age = age;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }
