@@ -80,15 +80,15 @@ public class BookController {
         return "redirect:/books";
     }
 
-    @PostMapping("{id}/release")
+    @PatchMapping("{id}/release")
     public String release(@PathVariable("id") int id) {
         bookDAO.release(id);
         return "redirect:/books/" + id;
     }
 
-    @PostMapping("/{id}/assign")
-    public String assign(@PathVariable("id") int id, @ModelAttribute("person") Person selectPerson) {
-        bookDAO.assign(id, selectPerson);
+    @PatchMapping("/{id}/assign")
+    public String assign(@PathVariable("id") int id, @ModelAttribute("person") Person selectedPerson) {
+        bookDAO.assign(id, selectedPerson);
         return "redirect:/books/" + id;
     }
 }
