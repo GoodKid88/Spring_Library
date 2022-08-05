@@ -13,15 +13,14 @@ public class Book {
     @NotEmpty(message = "Author should not be empty")
     @Size(min = 2, max = 30, message = "Author should be between 2 and 30 characters")
     private String author;
-    @Min(value = 0, message = "Year should be greater than 1850")
+    @Min(value = 1850, message = "Year should be greater than 1850")
     private int year;
 
     public Book(){
 
     }
 
-    public Book(int id, String name, String author, int year) {
-        this.id = id;
+    public Book(String name, String author, int year) {
         this.name = name;
         this.author = author;
         this.year = year;

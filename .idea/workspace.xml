@@ -10,30 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdee7390-c452-48ae-ab1a-c1c57f4afea3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/controllers/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/BookDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/models/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/util/PersonValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/config/MySpringMvcDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/config/MySpringMvcDispatcherServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/controllers/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/controllers/BatchController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/controllers/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/BookDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/BookMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/PersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/PersonMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/dao/PersonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/models/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/murashkin/springcourse/util/PersonValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/adminPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/batch/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +60,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/GoodK/IdeaProjects/Spring_Library/src/main/webapp/WEB-INF/views/book"
+    "last_opened_file_path": "C:/Users/GoodK/IdeaProjects/lesson21",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "6250987e23a52e4f7dd760e8db95de32"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -85,6 +75,9 @@
       <recent name="C:\Users\GoodK\IdeaProjects\Spring_Library\src\main\webapp\WEB-INF\views\book" />
       <recent name="C:\Users\GoodK\IdeaProjects\Spring_Library\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\GoodK\IdeaProjects\Spring_Library\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.murashkin.springcourse.util" />
     </key>
   </component>
   <component name="RunManager">
@@ -185,6 +178,8 @@
       <option name="presentableId" value="Default" />
       <updated>1659600021381</updated>
       <workItem from="1659600023054" duration="7327000" />
+      <workItem from="1659634195038" duration="1188000" />
+      <workItem from="1659670212286" duration="17160000" />
     </task>
     <servers />
   </component>
