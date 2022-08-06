@@ -65,6 +65,7 @@ public class PeopleController {
                          @PathVariable("id") int id) {
         if (bindingResult.hasErrors())
             return "people/edit";
+
         personValidator.validate(person, bindingResult);
         personDAO.update(id, person);
         return "redirect:/people";

@@ -26,7 +26,7 @@ public class PersonValidator implements Validator {
         Person person = (Person) o;
 
         if (personDAO.getPersonByFullName(person.getName()).isPresent()) {
-    errors.rejectValue("name", "", "This name is already taken");
+            errors.rejectValue("name", "", "This name is already taken");
         }
     }
 }

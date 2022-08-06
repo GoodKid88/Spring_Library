@@ -20,9 +20,9 @@ public class BookController {
     private final PersonDAO personDAO;
 
     @Autowired
-    public BookController(BookDAO bookDAO, PersonDAO personDAO, PersonDAO personDAO1) {
+    public BookController(BookDAO bookDAO, PersonDAO personDAO) {
         this.bookDAO = bookDAO;
-        this.personDAO = personDAO1;
+        this.personDAO = personDAO;
     }
 
     @GetMapping()
@@ -35,6 +35,7 @@ public class BookController {
     public String show(@PathVariable("id") int id, Model model, @ModelAttribute("person") Person person) {
         model.addAttribute("book", bookDAO.show(id));
         Optional<Person> bookOwner = bookDAO.getBookOwner(id);
+
         if (bookOwner.isPresent()) {
             model.addAttribute("owner", bookOwner.get());
         } else {
